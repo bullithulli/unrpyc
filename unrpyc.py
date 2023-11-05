@@ -82,7 +82,7 @@ class RevertableList(magic.FakeStrict, list):
         return list.__new__(cls)
 
 class RevertableDict(magic.FakeStrict, dict):
-    __module__ = "renpy.python"
+    __module__ = "renpy.revertable"
     def __new__(cls):
         return dict.__new__(cls)
 
